@@ -40,6 +40,9 @@ const player = { // object에 접근할 때 : 활용 property를 추가하여 �
     name : "nico",
     points: 10,
     fat: true,
+    sayHello: function(otherPersonName){
+        console.log(otherPersonName + " Hello");
+    },
 };
 
 console.log(player);
@@ -49,8 +52,9 @@ player.fat = false;
 player.lastName = "Kim";
 console.log(player);
 
-function sayHello(){
-    console.log("Hello my name is taeyong");
+function sayHello(nameOfPerson, age){
+    console.log("Hello my name is" + nameOfPerson, "age is " + age);
 }
 
-sayHello();
+sayHello("taeyong", 25);
+player.sayHello("taeyong");
