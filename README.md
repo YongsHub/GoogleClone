@@ -21,7 +21,7 @@ array[1] // 참조
 const player = {
     name: "Taeyong",
     age: 25,
-    sayHello: Function(otherPersonName){
+    sayHello: function(otherPersonName){
         console.log("nice to meet you" + otherPersonName);
     },
 }
