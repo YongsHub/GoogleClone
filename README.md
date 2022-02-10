@@ -31,3 +31,6 @@ function sayHello(name, age){
     console.log(name, "nice to meet you my age is " + age);
 }
 ```
+
+- isNaN 함수 number가 아니면 return true
+- 조건문 활용
