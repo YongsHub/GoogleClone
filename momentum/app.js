@@ -58,3 +58,27 @@ function sayHello(nameOfPerson, age){
 
 sayHello("taeyong", 25);
 player.sayHello("taeyong");
+
+const Person = {
+    name: "Taeyong",
+    age: 25,
+};
+
+console.log(Person.name);
+Person.name = "kimtaeyong";
+console.log(Person.name);
+
+function saySing(){
+    console.log("lalalala");
+}
+
+saySing();
+
+function plus(potato, salad){
+    console.log(potato + salad);
+}
+
+plus(5, 10);
+
+
+

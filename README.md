@@ -9,11 +9,12 @@
 - const는 상수를 의미 즉, 값이 바뀌지 않음 let은 변수로 활용할 수 있다. 따라서 variable 값이 바뀌게 하고 싶지 않을때 const를 활용, 바뀌게 하고 싶을 때는 let 키워드를 활용하면 된다. (var은 쓰지 말 것!)
 
 * 많은 사람들이 const를 base로 쓰고 꼭 필요한 부분만 let을 이용한다.
+* undefined와 null 의 의미를 이해하기
 
 ### 📌 배열과 Object 및 Property, 함수 기본 예제
 
 ```
-array = []
+array = [] // 배열에는 원하는 모든 데이터 타입이 들어갈 수 있다.
 array.push() // 삽입
 array[1] // 참조
 
