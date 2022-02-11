@@ -34,3 +34,11 @@ function sayHello(name, age){
 
 - isNaN 함수 number가 아니면 return true
 - 조건문 활용
+
+## 📌 자바 스크립트는 HTML elements 들과 상호 작용할 수 있다.
+
+> Javascript를 통해 변경하고 읽을 수 있다. console에 document를 입력하면, 작성한 HTML을 가져올 수 있다. document는 다앙하고 많은 property들을 가지고 있는 Object이다. -> console.dir(document)를 통해 property들을 확인해 볼 수 있다. document속성 중 title이 존재하는데, index.html에서 작성한 title과 맞는지 확인해 볼 수 있다. -> 이것은 자바스크립트 관점에서 document 객체로 확인하는 것이다. -> document.title
+
+> app.js에서 HTML을 접근하기 위한 document를 사용할 수 있는 이유는 HTML이 app.js를 load하기 때문에 존재하는 것이다.
+
+> querySelector() -> css selector 처럼 요소를 가져올 수 있다. 예를 들어, document.querySelector(".hello h1"); hello클래스 내 h1 요소를 가져오는 것이다. 쉽게 정리하자면 querySelector는 CSS selector를 사용하여 검색할 수 있다.

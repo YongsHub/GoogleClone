@@ -44,13 +44,22 @@ console.log(powerResult);
 
 const age = parseInt(prompt("How old are you?"));
 
-if(isNaN(age)){
-    console.log("please write a Number"); // condition true
+if(isNaN(age) || age < 0){
+    console.log("please write a real positive Number"); // condition true
 } else if(age < 18){
     console.log("You are too young.");// contdition false
 } else if(age >= 18 && age <= 50){
     console.log("You can drink");
+} else if(age > 50 && age <= 80){
+    console.log("You should exercise");
+} else if (age === 100){
+    console.log("wow you are wise");
 } else {
-    console.log("You can drink");
+    console.log("You can't drink");
 }
 
+const title = document.querySelector(".Hello h1"); // Returns the first element
+console.log(title);
+
+const titles = document.querySelectorAll(".Hello h1");
+console.log(titles);
