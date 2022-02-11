@@ -58,8 +58,10 @@ if(isNaN(age) || age < 0){
     console.log("You can't drink");
 }
 
-const title = document.querySelector(".Hello h1"); // Returns the first element
-console.log(title);
+const title = document.querySelector(".Hello:first-child h1"); // Returns the first element
 
-const titles = document.querySelectorAll(".Hello h1");
-console.log(titles);
+function handleTitleClick(){
+    console.log("title was clicked!!");
+}
+
+title.addEventListener("click", handleTitleClick);
