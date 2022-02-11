@@ -61,7 +61,16 @@ if(isNaN(age) || age < 0){
 const title = document.querySelector(".Hello:first-child h1"); // Returns the first element
 
 function handleTitleClick(){
-    console.log("title was clicked!!");
+    title.style.color = "blue";
+}
+function handleMouseOn(){
+    title.innerText = "Mouse is on here!";
 }
 
-title.addEventListener("click", handleTitleClick);
+function handleMouseLeave(){
+    title.innerText = "Mouse is gone!";
+}
+console.dir(title);
+title.addEventListener("click", handleTitleClick); // 괄호는 만들지 않는다. 유저가 click할 경우에 자바스크립트가 실행시켜줌
+title.addEventListener("mouseenter", handleMouseOn);
+title.addEventListener("mouseleave", handleMouseLeave);

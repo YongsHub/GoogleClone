@@ -42,3 +42,7 @@ function sayHello(name, age){
 > app.js에서 HTML을 접근하기 위한 document를 사용할 수 있는 이유는 HTML이 app.js를 load하기 때문에 존재하는 것이다.
 
 > querySelector() -> css selector 처럼 요소를 가져올 수 있다. 예를 들어, document.querySelector(".hello h1"); hello클래스 내 h1 요소를 가져오는 것이다. 쉽게 정리하자면 querySelector는 CSS selector를 사용하여 검색할 수 있다.
+
+### 📌 listen 하고 싶은 event 찾는 방법
+
+- Ex) h1 html element mdn(mozilla developer network)에 검색을 해보는 것이다. Javascript element 는 Web APIs 문장을 포함한 링크를 통해 확인하면 된다.
