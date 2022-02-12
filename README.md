@@ -46,3 +46,14 @@ function sayHello(name, age){
 ### 📌 listen 하고 싶은 event 찾는 방법
 
 - Ex) h1 html element mdn(mozilla developer network)에 검색을 해보는 것이다. Javascript element 는 Web APIs 문장을 포함한 링크를 통해 확인하면 된다.
+
+- 모든 EventListener function의 첫번째 argument는 항상 event에 벌어진 일들에 대한 정보가 된다. JS가 무료로 제공해주는 것으로써, argument만 써주면 이용 가능하다.
+
+```
+function onLoginSubmit(tomato) {
+    tomato.preventDefault();
+    console.log(tomato);
+}
+## tomato argument를 확인해보면 된다.
+loginForm.addEventListener("submit", onLoginSubmit);
+```
