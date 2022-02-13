@@ -57,3 +57,9 @@ function onLoginSubmit(tomato) {
 ## tomato argument를 확인해보면 된다.
 loginForm.addEventListener("submit", onLoginSubmit);
 ```
+
+### 📌 localStorage API를 활용하기
+
+- [localStorage API 확인하기](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+
+* key, value를 활용하여 setItem(), getItem(), removeItem() 메서드를 활용할 수 있다.
