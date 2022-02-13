@@ -2,6 +2,7 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("#login-form input");
 const link = document.querySelector("a");
 const greeting = document.querySelector("#greeting");
+const toDo = document.querySelector("#todo-form");
 
 const HIDDEN_CLASS_NAME = "hidden";
 const USERNAME_KEY = "username";
@@ -21,6 +22,7 @@ function handleLinkClick(event) {
 function paintGreetings(){
     const username = localStorage.getItem(USERNAME_KEY);
     greeting.classList.remove(HIDDEN_CLASS_NAME);
+    toDo.classList.remove(HIDDEN_CLASS_NAME);
     greeting.innerText = `Hello ${username}`;
 }
 
