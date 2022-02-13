@@ -30,7 +30,7 @@ function makeToDo(newTodoObj) { // li요소 만들어서 span과 button 요소 �
     button.addEventListener("click", deleteToDo);
     toDoList.appendChild(li);
 }
-function handleToDoSubmit(event) {
+function handleToDoSubmit(event) { // 제출하는 함수
     event.preventDefault();
     const newToDo = toDoInput.value;
     toDoInput.value = "";
