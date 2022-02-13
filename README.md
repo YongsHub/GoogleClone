@@ -63,3 +63,5 @@ loginForm.addEventListener("submit", onLoginSubmit);
 - [localStorage API 확인하기](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
 * key, value를 활용하여 setItem(), getItem(), removeItem() 메서드를 활용할 수 있다.
+
+* padStart(), padEnd(), date.getHours(), date.getMinutes(), date.getSeconds() 알아두기
