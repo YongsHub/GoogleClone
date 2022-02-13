@@ -2,14 +2,14 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("#login-form input");
 const link = document.querySelector("a");
 const greeting = document.querySelector("#greeting");
-const toDo = document.querySelector("#todo-form");
+const toDo_Form = document.querySelector("#todo-form");
 
 const HIDDEN_CLASS_NAME = "hidden";
 const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
     event.preventDefault(); // 브라우저의 기본 동작을 막아준다.
-    loginForm.classList.add(HIDDEN_CLASS_NAME);
+    loginForm.classList.add(HIDDEN_CLASS_NAME); // hidden class 추가
     localStorage.setItem(USERNAME_KEY, loginInput.value);
     paintGreetings();
 }
@@ -22,7 +22,7 @@ function handleLinkClick(event) {
 function paintGreetings(){
     const username = localStorage.getItem(USERNAME_KEY);
     greeting.classList.remove(HIDDEN_CLASS_NAME);
-    toDo.classList.remove(HIDDEN_CLASS_NAME);
+    toDo_Form.classList.remove(HIDDEN_CLASS_NAME);
     greeting.innerText = `Hello ${username}`;
 }
 
