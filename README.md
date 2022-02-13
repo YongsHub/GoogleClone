@@ -65,3 +65,5 @@ loginForm.addEventListener("submit", onLoginSubmit);
 * key, value를 활용하여 setItem(), getItem(), removeItem() 메서드를 활용할 수 있다.
 
 * padStart(), padEnd(), date.getHours(), date.getMinutes(), date.getSeconds() 알아두기
+
+* JSON.stringfy()와 JSON.parse() 알아두기
