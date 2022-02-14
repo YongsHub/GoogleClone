@@ -67,3 +67,9 @@ loginForm.addEventListener("submit", onLoginSubmit);
 * padStart(), padEnd(), date.getHours(), date.getMinutes(), date.getSeconds() 알아두기
 
 * JSON.stringfy()와 JSON.parse() 알아두기
+
+### 📌 weather API 활용하는 방법
+
+- [https://openweathermap.org/current](API Call 에 대한 사용법 확인하기)
+- API key 발급 받아야함.
+- fetch()에 대해 이해하기.
